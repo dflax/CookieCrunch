@@ -27,6 +27,7 @@
 		FEF382041AF2CC7600782BB2 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF381F31AF2CC7600782BB2 /* Scrape.wav */; };
 		FEF382051AF2CC7600782BB2 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FEF381F41AF2CC7600782BB2 /* Sprites.atlas */; };
 		FEF382071AF2D07D00782BB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF382061AF2D07D00782BB2 /* Images.xcassets */; };
+		FEF382091AF2D12800782BB2 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF382081AF2D12800782BB2 /* Cookie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		FEF381F31AF2CC7600782BB2 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
 		FEF381F41AF2CC7600782BB2 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		FEF382061AF2D07D00782BB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FEF382081AF2D12800782BB2 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				FEF381C21AF2CB7C00782BB2 /* GameViewController.swift */,
 				FEF381C41AF2CB7C00782BB2 /* Main.storyboard */,
 				FEF381C91AF2CB7C00782BB2 /* LaunchScreen.xib */,
+				FEF382081AF2D12800782BB2 /* Cookie.swift */,
 				FEF382061AF2D07D00782BB2 /* Images.xcassets */,
 				FEF381E01AF2CC7600782BB2 /* Resources */,
 				FEF381BA1AF2CB7C00782BB2 /* Supporting Files */,
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF381C11AF2CB7C00782BB2 /* GameScene.swift in Sources */,
+				FEF382091AF2D12800782BB2 /* Cookie.swift in Sources */,
 				FEF381C31AF2CB7C00782BB2 /* GameViewController.swift in Sources */,
 				FEF381BD1AF2CB7C00782BB2 /* AppDelegate.swift in Sources */,
 			);
