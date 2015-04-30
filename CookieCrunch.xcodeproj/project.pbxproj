@@ -66,6 +66,7 @@
 		FEF381F41AF2CC7600782BB2 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		FEF382061AF2D07D00782BB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FEF382081AF2D12800782BB2 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		FEF3820A1AF2D36F00782BB2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 		FEF381AE1AF2CB7C00782BB2 = {
 			isa = PBXGroup;
 			children = (
+				FEF3820A1AF2D36F00782BB2 /* README.md */,
 				FEF381B91AF2CB7C00782BB2 /* CookieCrunch */,
 				FEF381D31AF2CB7C00782BB2 /* CookieCrunchTests */,
 				FEF381B81AF2CB7C00782BB2 /* Products */,
