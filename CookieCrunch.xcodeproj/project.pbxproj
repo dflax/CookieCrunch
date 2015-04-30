@@ -15,6 +15,19 @@
 		FEF381C81AF2CB7C00782BB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF381C71AF2CB7C00782BB2 /* Images.xcassets */; };
 		FEF381CB1AF2CB7C00782BB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF381C91AF2CB7C00782BB2 /* LaunchScreen.xib */; };
 		FEF381D71AF2CB7C00782BB2 /* CookieCrunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF381D61AF2CB7C00782BB2 /* CookieCrunchTests.swift */; };
+		FEF381F51AF2CC7600782BB2 /* Grid.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FEF381E11AF2CC7600782BB2 /* Grid.atlas */; };
+		FEF381FA1AF2CC7600782BB2 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = FEF381E81AF2CC7600782BB2 /* Level_0.json */; };
+		FEF381FB1AF2CC7600782BB2 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = FEF381E91AF2CC7600782BB2 /* Level_1.json */; };
+		FEF381FC1AF2CC7600782BB2 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = FEF381EA1AF2CC7600782BB2 /* Level_2.json */; };
+		FEF381FD1AF2CC7600782BB2 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = FEF381EB1AF2CC7600782BB2 /* Level_3.json */; };
+		FEF381FE1AF2CC7600782BB2 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = FEF381EC1AF2CC7600782BB2 /* Level_4.json */; };
+		FEF381FF1AF2CC7600782BB2 /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF381EE1AF2CC7600782BB2 /* Chomp.wav */; };
+		FEF382001AF2CC7600782BB2 /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF381EF1AF2CC7600782BB2 /* Drip.wav */; };
+		FEF382011AF2CC7600782BB2 /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF381F01AF2CC7600782BB2 /* Error.wav */; };
+		FEF382021AF2CC7600782BB2 /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF381F11AF2CC7600782BB2 /* Ka-Ching.wav */; };
+		FEF382031AF2CC7600782BB2 /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEF381F21AF2CC7600782BB2 /* Mining by Moonlight.mp3 */; };
+		FEF382041AF2CC7600782BB2 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF381F31AF2CC7600782BB2 /* Scrape.wav */; };
+		FEF382051AF2CC7600782BB2 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FEF381F41AF2CC7600782BB2 /* Sprites.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +53,19 @@
 		FEF381D01AF2CB7C00782BB2 /* CookieCrunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieCrunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF381D51AF2CB7C00782BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF381D61AF2CB7C00782BB2 /* CookieCrunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCrunchTests.swift; sourceTree = "<group>"; };
+		FEF381E11AF2CC7600782BB2 /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Grid.atlas; sourceTree = "<group>"; };
+		FEF381E81AF2CC7600782BB2 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		FEF381E91AF2CC7600782BB2 /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		FEF381EA1AF2CC7600782BB2 /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		FEF381EB1AF2CC7600782BB2 /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		FEF381EC1AF2CC7600782BB2 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		FEF381EE1AF2CC7600782BB2 /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+		FEF381EF1AF2CC7600782BB2 /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+		FEF381F01AF2CC7600782BB2 /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+		FEF381F11AF2CC7600782BB2 /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+		FEF381F21AF2CC7600782BB2 /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
+		FEF381F31AF2CC7600782BB2 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		FEF381F41AF2CC7600782BB2 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +114,7 @@
 				FEF381C41AF2CB7C00782BB2 /* Main.storyboard */,
 				FEF381C71AF2CB7C00782BB2 /* Images.xcassets */,
 				FEF381C91AF2CB7C00782BB2 /* LaunchScreen.xib */,
+				FEF381E01AF2CC7600782BB2 /* Resources */,
 				FEF381BA1AF2CB7C00782BB2 /* Supporting Files */,
 			);
 			path = CookieCrunch;
@@ -116,6 +143,42 @@
 				FEF381D51AF2CB7C00782BB2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEF381E01AF2CC7600782BB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEF381E11AF2CC7600782BB2 /* Grid.atlas */,
+				FEF381E71AF2CC7600782BB2 /* Levels */,
+				FEF381ED1AF2CC7600782BB2 /* Sounds */,
+				FEF381F41AF2CC7600782BB2 /* Sprites.atlas */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FEF381E71AF2CC7600782BB2 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				FEF381E81AF2CC7600782BB2 /* Level_0.json */,
+				FEF381E91AF2CC7600782BB2 /* Level_1.json */,
+				FEF381EA1AF2CC7600782BB2 /* Level_2.json */,
+				FEF381EB1AF2CC7600782BB2 /* Level_3.json */,
+				FEF381EC1AF2CC7600782BB2 /* Level_4.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		FEF381ED1AF2CC7600782BB2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FEF381EE1AF2CC7600782BB2 /* Chomp.wav */,
+				FEF381EF1AF2CC7600782BB2 /* Drip.wav */,
+				FEF381F01AF2CC7600782BB2 /* Error.wav */,
+				FEF381F11AF2CC7600782BB2 /* Ka-Ching.wav */,
+				FEF381F21AF2CC7600782BB2 /* Mining by Moonlight.mp3 */,
+				FEF381F31AF2CC7600782BB2 /* Scrape.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +261,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF382041AF2CC7600782BB2 /* Scrape.wav in Resources */,
+				FEF381FC1AF2CC7600782BB2 /* Level_2.json in Resources */,
+				FEF382011AF2CC7600782BB2 /* Error.wav in Resources */,
+				FEF381FA1AF2CC7600782BB2 /* Level_0.json in Resources */,
+				FEF382001AF2CC7600782BB2 /* Drip.wav in Resources */,
+				FEF381FE1AF2CC7600782BB2 /* Level_4.json in Resources */,
+				FEF382031AF2CC7600782BB2 /* Mining by Moonlight.mp3 in Resources */,
+				FEF381FF1AF2CC7600782BB2 /* Chomp.wav in Resources */,
 				FEF381CB1AF2CB7C00782BB2 /* LaunchScreen.xib in Resources */,
 				FEF381C81AF2CB7C00782BB2 /* Images.xcassets in Resources */,
 				FEF381BF1AF2CB7C00782BB2 /* GameScene.sks in Resources */,
+				FEF381F51AF2CC7600782BB2 /* Grid.atlas in Resources */,
+				FEF382051AF2CC7600782BB2 /* Sprites.atlas in Resources */,
+				FEF381FB1AF2CC7600782BB2 /* Level_1.json in Resources */,
+				FEF382021AF2CC7600782BB2 /* Ka-Ching.wav in Resources */,
+				FEF381FD1AF2CC7600782BB2 /* Level_3.json in Resources */,
 				FEF381C61AF2CB7C00782BB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +495,7 @@
 				FEF381DC1AF2CB7C00782BB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEF381DD1AF2CB7C00782BB2 /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +504,7 @@
 				FEF381DF1AF2CB7C00782BB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
