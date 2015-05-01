@@ -8,7 +8,8 @@
 
 import SpriteKit
 
-enum CookieType: Int {
+enum CookieType: Int, Printable {
+
 	case Unknown = 0, Croissant, Cupcake, Danish, Donut, Macaroon, SugarCookie
 
 	var spriteName: String {
@@ -26,9 +27,25 @@ enum CookieType: Int {
 	var highlightedSpriteName: String {
 		return spriteName + "-Highlighted"
 	}
+
+	static func random() -> CookieType {
+		return CookieType(rawValue: Int(arc4random_uniform(6)) + 1)!
+	}
+
+	// To conform to the Printable protocol
+	var description: String {
+		return spriteName
+	}
+
 }
 
-class Cookie {
+class Cookie: Printable {
+
+	// To conform to the Printable protocol
+	var description: String {
+		return "type:\(cookieType) square:(\(column),\(row))"
+	}
+
 	var column: Int
 	var row: Int
 	let cookieType: CookieType
