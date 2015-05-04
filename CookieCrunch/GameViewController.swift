@@ -40,6 +40,9 @@ class GameViewController: UIViewController {
 		level = Level(filename: "Level_1")
 		scene.level = level
 
+		// Add the tiles to the scene
+		scene.addTiles()
+
 		// Present the scene.
 		skView.presentScene(scene)
 
@@ -53,9 +56,21 @@ class GameViewController: UIViewController {
 		shuffle()
 	}
 
+	// shuffle the board (or start from scratch)
 	func shuffle() {
 		let newCookies = level.shuffle()
 		scene.addSpritesForCookies(newCookies)
+	}
+
+	// Handle when someone swipes to move pieces
+	func handleSwipe(swap: Swap) {
+		view.userInteractionEnabled = false
+
+		level.performSwap(swap)
+
+		scene.animateSwap(swap) {
+			self.view.userInteractionEnabled = true
+		}
 	}
 
 }
