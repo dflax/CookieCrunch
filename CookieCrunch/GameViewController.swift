@@ -11,6 +11,7 @@ import SpriteKit
 
 class GameViewController: UIViewController {
 	var scene: GameScene!
+	var level: Level!
 
 	override func prefersStatusBarHidden() -> Bool {
 		return true
@@ -35,8 +36,27 @@ class GameViewController: UIViewController {
 		scene = GameScene(size: skView.bounds.size)
 		scene.scaleMode = .AspectFill
 
+		// Create the Level
+		level = Level()
+		scene.level = level
+
 		// Present the scene.
 		skView.presentScene(scene)
+
+		// Begin the game itself
+		beginGame()
+
 	}
+
+	// Start the game
+	func beginGame() {
+		shuffle()
+	}
+
+	func shuffle() {
+		let newCookies = level.shuffle()
+		scene.addSpritesForCookies(newCookies)
+	}
+
 }
 

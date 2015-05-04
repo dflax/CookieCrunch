@@ -39,7 +39,11 @@ enum CookieType: Int, Printable {
 
 }
 
-class Cookie: Printable {
+func ==(lhs: Cookie, rhs: Cookie) -> Bool {
+	return lhs.column == rhs.column && lhs.row == rhs.row
+}
+
+class Cookie: Printable, Hashable {
 
 	// To conform to the Printable protocol
 	var description: String {
@@ -50,6 +54,11 @@ class Cookie: Printable {
 	var row: Int
 	let cookieType: CookieType
 	var sprite: SKSpriteNode?
+
+	// To conform to the Hashable protocol (required for Set<Cookie> usage)
+	var hashValue: Int {
+		return row*10 + column
+	}
 
 	init(column: Int, row: Int, cookieType: CookieType) {
 		self.column = column
