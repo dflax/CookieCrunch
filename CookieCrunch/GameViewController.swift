@@ -36,8 +36,8 @@ class GameViewController: UIViewController {
 		scene = GameScene(size: skView.bounds.size)
 		scene.scaleMode = .AspectFill
 
-		// Create the Level
-		level = Level()
+		// Create the Level - start with level 1
+		level = Level(filename: "Level_1")
 		scene.level = level
 
 		// Present the scene.
