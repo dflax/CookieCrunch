@@ -32,6 +32,10 @@ class GameViewController: UIViewController {
 		let skView = view as! SKView
 		skView.multipleTouchEnabled = false
 
+println("skView.size: \(skView.bounds.size)")
+println("UIScreen.mainScreen().bounds.size: \(UIScreen.mainScreen().bounds.size)")
+println("view.bounds.size \(view.bounds.size)")
+
 		// Create and configure the scene.
 		scene = GameScene(size: skView.bounds.size)
 		scene.scaleMode = .AspectFill

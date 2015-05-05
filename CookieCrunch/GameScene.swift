@@ -26,6 +26,9 @@ class GameScene: SKScene {
 	// Closure to tell the controller about swipes
 	var swipeHandler: ((Swap) -> ())?
 
+	// To handle highlighting during selection
+	var selectionSprite = SKSpriteNode()
+
 	required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder) is not used in this app")
 	}
@@ -109,6 +112,9 @@ class GameScene: SKScene {
 			// 3
 			if let cookie = level.cookieAtColumn(column, row: row) {
 
+				// Highlight the sprite on the selected cookie
+				showSelectionIndicatorForCookie(cookie)
+
 				// 4
 				swipeFromColumn = column
 				swipeFromRow = row
@@ -145,6 +151,9 @@ class GameScene: SKScene {
 			if horzDelta != 0 || vertDelta != 0 {
 				trySwapHorizontal(horzDelta, vertical: vertDelta)
 
+				// Hide the highlight on the cookie
+				hideSelectionIndicator()
+
 				// 5
 				swipeFromColumn = nil
 			}
@@ -153,6 +162,12 @@ class GameScene: SKScene {
 
 	// For completeness, putting in touchedEnded and touchesCancelled
 	override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+
+		// In case the user just taps the screen, get rid of the selection of a cookie
+		if selectionSprite.parent != nil && swipeFromColumn != nil {
+			hideSelectionIndicator()
+		}
+
 		swipeFromColumn = nil
 		swipeFromRow = nil
 	}
@@ -206,6 +221,32 @@ class GameScene: SKScene {
 		let moveB = SKAction.moveTo(spriteA.position, duration: Duration)
 		moveB.timingMode = .EaseOut
 		spriteB.runAction(moveB)
+	}
+
+	// Support highlighting during swap
+	func showSelectionIndicatorForCookie(cookie: Cookie) {
+		if selectionSprite.parent != nil {
+			selectionSprite.removeFromParent()
+		}
+
+		if let sprite = cookie.sprite {
+			let texture = SKTexture(imageNamed: cookie.cookieType.highlightedSpriteName)
+			selectionSprite.size = texture.size()
+			selectionSprite.runAction(SKAction.setTexture(texture))
+
+			sprite.addChild(selectionSprite)
+			selectionSprite.alpha = 1.0
+		}
+	}
+
+	// Hide the selection highlight
+	func hideSelectionIndicator() {
+		selectionSprite.runAction(
+			SKAction.sequence([
+			SKAction.fadeOutWithDuration(0.3),
+				SKAction.removeFromParent()
+				])
+		)
 	}
 
 }
