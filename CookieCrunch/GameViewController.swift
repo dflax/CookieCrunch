@@ -43,6 +43,9 @@ class GameViewController: UIViewController {
 		// Add the tiles to the scene
 		scene.addTiles()
 
+		// Handle swaps
+		scene.swipeHandler = handleSwipe
+
 		// Present the scene.
 		skView.presentScene(scene)
 
