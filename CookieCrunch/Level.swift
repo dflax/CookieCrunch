@@ -19,6 +19,9 @@ class Level {
 	// Tiles are the slots on the board where the cookies are placed
 	private var tiles   = Array2D<Tile>(columns: NumColumns, rows: NumRows)
 
+	// Swaps that might be possible given rules
+	private var possibleSwaps = Set<Swap>()
+
 	// Create a new level
 	init(filename: String) {
 
@@ -52,8 +55,17 @@ class Level {
 		return cookies[column, row]
 	}
 
+	// Shuffle cookies and make sure swaps aren't against rules
 	func shuffle() -> Set<Cookie> {
-		return createInitialCookies()
+		var set: Set<Cookie>
+		do {
+			set = createInitialCookies()
+			detectPossibleSwaps()
+			println("possible swaps: \(possibleSwaps)")
+		}
+			while possibleSwaps.count == 0
+
+		return set
 	}
 
 	private func createInitialCookies() -> Set<Cookie> {
@@ -67,7 +79,6 @@ class Level {
 				if tiles[column, row] != nil {
 
 					// 2
-//					var cookieType = CookieType.random()
 					var cookieType: CookieType
 					do {
 						cookieType = CookieType.random()
@@ -107,6 +118,82 @@ class Level {
 		cookies[columnB, rowB] = swap.cookieA
 		swap.cookieA.column = columnB
 		swap.cookieA.row = rowB
+	}
+
+	//MARK: - Detecting swaps
+	private func hasChainAtColumn(column: Int, row: Int) -> Bool {
+		let cookieType = cookies[column, row]!.cookieType
+
+		var horzLength = 1
+		for var i = column - 1; i >= 0 && cookies[i, row]?.cookieType == cookieType;
+			--i, ++horzLength { }
+		for var i = column + 1; i < NumColumns && cookies[i, row]?.cookieType == cookieType;
+			++i, ++horzLength { }
+		if horzLength >= 3 { return true }
+
+		var vertLength = 1
+		for var i = row - 1; i >= 0 && cookies[column, i]?.cookieType == cookieType;
+			--i, ++vertLength { }
+		for var i = row + 1; i < NumRows && cookies[column, i]?.cookieType == cookieType;
+			++i, ++vertLength { }
+		return vertLength >= 3
+	}
+
+	// Method to detect swaps
+	func detectPossibleSwaps() {
+		var set = Set<Swap>()
+
+		for row in 0..<NumRows {
+			for column in 0..<NumColumns {
+				if let cookie = cookies[column, row] {
+
+					// Is it possible to swap this cookie with the one on the right?
+					if column < NumColumns - 1 {
+						// Have a cookie in this spot? If there is no tile, there is no cookie.
+						if let other = cookies[column + 1, row] {
+
+							// Swap them
+							cookies[column, row] = other
+							cookies[column + 1, row] = cookie
+
+							// Is either cookie now part of a chain?
+							if hasChainAtColumn(column + 1, row: row) ||
+								hasChainAtColumn(column, row: row) {
+									set.insert(Swap(cookieA: cookie, cookieB: other))
+							}
+
+							// Swap them back
+							cookies[column, row] = cookie
+							cookies[column + 1, row] = other
+						}
+
+						if row < NumRows - 1 {
+							if let other = cookies[column, row + 1] {
+								cookies[column, row] = other
+								cookies[column, row + 1] = cookie
+								
+								// Is either cookie now part of a chain?
+								if hasChainAtColumn(column, row: row + 1) ||
+									hasChainAtColumn(column, row: row) {
+										set.insert(Swap(cookieA: cookie, cookieB: other))
+								}
+								
+								// Swap them back
+								cookies[column, row] = cookie
+								cookies[column, row + 1] = other
+							}
+						}
+					}
+				}
+			}
+		}
+
+		possibleSwaps = set
+	}
+
+	// Are there any possible swaps?
+	func isPossibleSwap(swap: Swap) -> Bool {
+		return possibleSwaps.contains(swap)
 	}
 
 
