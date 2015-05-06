@@ -70,6 +70,9 @@ class GameViewController: UIViewController {
 		score = 0
 		updateLabels()
 
+		// Reset the combo multiplier - in case there are multiple chains
+		level.resetComboMultiplier()
+
 		shuffle()
 	}
 
@@ -122,6 +125,9 @@ class GameViewController: UIViewController {
 
 	// Start a new turn by turning back on the user interaction for the layer
 	func beginNextTurn() {
+
+		level.resetComboMultiplier()
+
 		level.detectPossibleSwaps()
 		view.userInteractionEnabled = true
 	}

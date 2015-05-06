@@ -384,11 +384,15 @@ class Level {
 
 		// 3-chain is 60 pts, 4-chain is 120, 5-chain is 180, and so on
 		for chain in chains {
-			chain.score = 60 * (chain.length - 2)
+			chain.score = 60 * (chain.length - 2) * comboMultiplier
+			++comboMultiplier
 		}
 	}
 
-
+	// Reset the combination multiplier
+	func resetComboMultiplier() {
+		comboMultiplier = 1
+	}
 
 }
 
