@@ -10,6 +10,9 @@ class Chain: Hashable, Printable {
 
 	var cookies = [Cookie]()
 
+	// For scores
+	var score = 0
+
 	enum ChainType: Printable {
 		case Horizontal
 		case Vertical
