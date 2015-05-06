@@ -100,6 +100,7 @@
 		FE0280AA1AF80401003EB9F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FEA549A51AF3D09500137A4B /* Array2D.swift */,
 				FEF382081AF2D12800782BB2 /* Cookie.swift */,
 				FEA549A71AF3D44800137A4B /* Level.swift */,
 				FE0280A41AF7D0C5003EB9F3 /* Tile.swift */,
@@ -120,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				FEF381C01AF2CB7C00782BB2 /* GameScene.swift */,
-				FEA549A51AF3D09500137A4B /* Array2D.swift */,
 				FE0280A61AF7D1EC003EB9F3 /* Extensions.swift */,
 				FEF381C41AF2CB7C00782BB2 /* Main.storyboard */,
 				FEF381C91AF2CB7C00782BB2 /* LaunchScreen.xib */,
