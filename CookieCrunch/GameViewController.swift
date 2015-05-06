@@ -24,7 +24,7 @@ class GameViewController: UIViewController {
 	override func supportedInterfaceOrientations() -> Int {
 		return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
 	}
- 
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -71,9 +71,9 @@ class GameViewController: UIViewController {
 
 		if level.isPossibleSwap(swap) {
 			level.performSwap(swap)
-			scene.animateSwap(swap) {
-				self.view.userInteractionEnabled = true
-			}
+
+			scene.animateSwap(swap, completion: handleMatches)
+
 		} else {
 			scene.animateInvalidSwap(swap) {
 				self.view.userInteractionEnabled = true
@@ -81,6 +81,16 @@ class GameViewController: UIViewController {
 		}
 	}
 
+	// Look for matches - chains in either direction
+	func handleMatches() {
+		let chains = level.removeMatches()
+
+		scene.animateMatchedCookies(chains) {
+			self.view.userInteractionEnabled = true
+		}
+	}
+
 
 }
+
 
