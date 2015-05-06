@@ -288,5 +288,82 @@ class Level {
 		}
 	}
 
+	//MARK: - Filling in after matches
+
+	func fillHoles() -> [[Cookie]] {
+		var columns = [[Cookie]]()
+
+		// 1
+		for column in 0..<NumColumns {
+			var array = [Cookie]()
+			for row in 0..<NumRows {
+
+				// 2
+				if tiles[column, row] != nil && cookies[column, row] == nil {
+
+					// 3
+					for lookup in (row + 1)..<NumRows {
+						if let cookie = cookies[column, lookup] {
+
+							// 4
+							cookies[column, lookup] = nil
+							cookies[column, row] = cookie
+							cookie.row = row
+
+							// 5
+							array.append(cookie)
+
+							// 6
+							break
+						}
+					}
+				}
+			}
+
+			// 7
+			if !array.isEmpty {
+				columns.append(array)
+			}
+		}
+		return columns
+	}
+
+	// Dropping in from the top
+	func topUpCookies() -> [[Cookie]] {
+		var columns = [[Cookie]]()
+		var cookieType: CookieType = .Unknown
+
+		for column in 0..<NumColumns {
+			var array = [Cookie]()
+
+			// 1
+			for var row = NumRows - 1; row >= 0 && cookies[column, row] == nil; --row {
+
+				// 2
+				if tiles[column, row] != nil {
+
+					// 3
+					var newCookieType: CookieType
+					do {
+						newCookieType = CookieType.random()
+					} while newCookieType == cookieType
+					cookieType = newCookieType
+
+					// 4
+					let cookie = Cookie(column: column, row: row, cookieType: cookieType)
+					cookies[column, row] = cookie
+					array.append(cookie)
+				}
+			}
+
+			// 5
+			if !array.isEmpty {
+				columns.append(array)
+			}
+		}
+		return columns
+	}
+
+
 }
 

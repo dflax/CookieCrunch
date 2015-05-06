@@ -13,6 +13,14 @@ class GameViewController: UIViewController {
 	var scene: GameScene!
 	var level: Level!
 
+	// Properties for scoring
+	var movesLeft = 0
+	var score = 0
+
+	@IBOutlet weak var targetLabel: UILabel!
+	@IBOutlet weak var movesLabel: UILabel!
+	@IBOutlet weak var scoreLabel: UILabel!
+
 	override func prefersStatusBarHidden() -> Bool {
 		return true
 	}
@@ -84,10 +92,25 @@ class GameViewController: UIViewController {
 	// Look for matches - chains in either direction
 	func handleMatches() {
 		let chains = level.removeMatches()
-
-		scene.animateMatchedCookies(chains) {
-			self.view.userInteractionEnabled = true
+		if chains.count == 0 {
+			beginNextTurn()
+			return
 		}
+		scene.animateMatchedCookies(chains) {
+			let columns = self.level.fillHoles()
+			self.scene.animateFallingCookies(columns) {
+				let columns = self.level.topUpCookies()
+				self.scene.animateNewCookies(columns) {
+					self.handleMatches()
+				}
+			}
+		}
+	}
+
+	// Start a new turn by turning back on the user interaction for the layer
+	func beginNextTurn() {
+		level.detectPossibleSwaps()
+		view.userInteractionEnabled = true
 	}
 
 
