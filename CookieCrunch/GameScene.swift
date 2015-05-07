@@ -36,6 +36,10 @@ class GameScene: SKScene {
 	let fallingCookieSound = SKAction.playSoundFileNamed("Scrape.wav", waitForCompletion: false)
 	let addCookieSound = SKAction.playSoundFileNamed("Drip.wav", waitForCompletion: false)
 
+	// Properties to improve the background and sprite logistics
+	let cropLayer = SKCropNode()
+	let maskLayer = SKNode()
+
 	required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder) is not used in this app")
 	}
@@ -61,7 +65,15 @@ class GameScene: SKScene {
 		gameLayer.addChild(tilesLayer)
 
 		cookiesLayer.position = layerPosition
-		gameLayer.addChild(cookiesLayer)
+
+		// To enable the masking
+		cropLayer.addChild(cookiesLayer)
+
+
+		// Initialize the smooth layers
+		gameLayer.addChild(cropLayer)
+		maskLayer.position = layerPosition
+		cropLayer.maskNode = maskLayer
 
 		// Initialize the swipe gesture tracking properties
 		swipeFromColumn = nil
@@ -117,9 +129,9 @@ class GameScene: SKScene {
 		for row in 0..<NumRows {
 			for column in 0..<NumColumns {
 				if let tile = level.tileAtColumn(column, row: row) {
-					let tileNode = SKSpriteNode(imageNamed: "Tile")
+					let tileNode = SKSpriteNode(imageNamed: "MaskTile")
 					tileNode.position = pointForColumn(column, row: row)
-					tilesLayer.addChild(tileNode)
+					maskLayer.addChild(tileNode)
 				}
 			}
 		}
