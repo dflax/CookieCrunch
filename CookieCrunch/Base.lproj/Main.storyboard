@@ -53,19 +53,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2h-PC-0xq">
+                                <rect key="frame" x="0.0" y="191" width="600" height="217"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="uYn-Pp-6Zw" secondAttribute="centerX" id="5cO-iJ-BMc"/>
                             <constraint firstAttribute="centerX" secondItem="6gl-5r-SNU" secondAttribute="centerX" id="Jq1-QX-ipZ"/>
+                            <constraint firstItem="h2h-PC-0xq" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-16" id="PSc-Nh-dTS"/>
                             <constraint firstItem="IH1-8a-gkr" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" id="PsB-hG-wjv"/>
                             <constraint firstItem="IH1-8a-gkr" firstAttribute="centerX" secondItem="kpI-qX-Q5p" secondAttribute="centerX" id="WPi-J1-sYz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kpI-qX-Q5p" secondAttribute="trailing" constant="17" id="brc-lx-4Q3"/>
                             <constraint firstItem="mRd-zZ-fK4" firstAttribute="centerX" secondItem="wlu-Ox-M4q" secondAttribute="centerX" id="jKx-EE-7cc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h2h-PC-0xq" secondAttribute="trailing" constant="-16" id="nP8-2j-T4z"/>
                             <constraint firstItem="uYn-Pp-6Zw" firstAttribute="centerX" secondItem="6gl-5r-SNU" secondAttribute="centerX" id="oF0-Q4-DMg"/>
+                            <constraint firstAttribute="centerY" secondItem="h2h-PC-0xq" secondAttribute="centerY" id="uQo-es-RVd"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="gameOverPanel" destination="h2h-PC-0xq" id="nvG-f9-nIu"/>
                         <outlet property="movesLabel" destination="uYn-Pp-6Zw" id="vZ9-D3-Yoo"/>
                         <outlet property="scoreLabel" destination="IH1-8a-gkr" id="YTX-aU-16T"/>
                         <outlet property="targetLabel" destination="mRd-zZ-fK4" id="5aD-K6-6BW"/>
