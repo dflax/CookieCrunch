@@ -27,6 +27,12 @@ class GameViewController: UIViewController {
 	// Give the user an ability to re-shuffle the board
 	@IBOutlet weak var shuffleButton: UIButton!
 
+	// Action for when the user clicks the shuffle button
+	@IBAction func shuffleButtonPressed(AnyObject) {
+		shuffle()
+		decrementMoves()
+	}
+
 	// Will detect game over and re-start
 	var tapGestureRecognizer: UITapGestureRecognizer!
 
@@ -66,6 +72,9 @@ class GameViewController: UIViewController {
 		// Hide the game over imageview
 		gameOverPanel.hidden = true
 
+		// Hide the shuffle button
+		shuffleButton.hidden = true
+
 		// Present the scene.
 		skView.presentScene(scene)
 
@@ -86,7 +95,9 @@ class GameViewController: UIViewController {
 		level.resetComboMultiplier()
 
 		// Animate the beginning of the game
-		scene.animateBeginGame() { }
+		scene.animateBeginGame() {
+			self.shuffleButton.hidden = false
+		}
 
 		shuffle()
 	}
@@ -181,6 +192,9 @@ class GameViewController: UIViewController {
 	func showGameOver() {
 		gameOverPanel.hidden = false
 		scene.userInteractionEnabled = false
+
+		// Hide the shuffle button
+		shuffleButton.hidden = true
 
 		scene.animateGameOver() {
 			self.tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "hideGameOver")
