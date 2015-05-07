@@ -62,7 +62,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2h-PC-0xq">
                                 <rect key="frame" x="0.0" y="191" width="600" height="217"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGI-ld-j8P">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGI-ld-j8P">
                                 <rect key="frame" x="250" y="544" width="100" height="36"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <state key="normal" title="Shuffle" backgroundImage="Button">
@@ -78,6 +78,7 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="uYn-Pp-6Zw" secondAttribute="centerX" id="5cO-iJ-BMc"/>
                             <constraint firstAttribute="centerX" secondItem="6gl-5r-SNU" secondAttribute="centerX" id="Jq1-QX-ipZ"/>
+                            <constraint firstAttribute="centerX" secondItem="sGI-ld-j8P" secondAttribute="centerX" id="Nwq-G4-WpQ"/>
                             <constraint firstItem="h2h-PC-0xq" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-16" id="PSc-Nh-dTS"/>
                             <constraint firstItem="IH1-8a-gkr" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" id="PsB-hG-wjv"/>
                             <constraint firstItem="IH1-8a-gkr" firstAttribute="centerX" secondItem="kpI-qX-Q5p" secondAttribute="centerX" id="WPi-J1-sYz"/>
