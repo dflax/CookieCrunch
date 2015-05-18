@@ -10,6 +10,12 @@
 		FE0280A51AF7D0C5003EB9F3 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0280A41AF7D0C5003EB9F3 /* Tile.swift */; };
 		FE0280A71AF7D1EC003EB9F3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0280A61AF7D1EC003EB9F3 /* Extensions.swift */; };
 		FE0280A91AF803F2003EB9F3 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0280A81AF803F2003EB9F3 /* Swap.swift */; };
+		FE3AD72C1B0A6ED900F8650E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3AD72B1B0A6ED900F8650E /* AppDelegate.swift */; };
+		FE3AD72E1B0A6ED900F8650E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3AD72D1B0A6ED900F8650E /* GameScene.swift */; };
+		FE3AD7301B0A6ED900F8650E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FE3AD72F1B0A6ED900F8650E /* GameScene.sks */; };
+		FE3AD7321B0A6EDA00F8650E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3AD7311B0A6EDA00F8650E /* Images.xcassets */; };
+		FE3AD7351B0A6EDA00F8650E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE3AD7331B0A6EDA00F8650E /* MainMenu.xib */; };
+		FE3AD7411B0A6EDA00F8650E /* CookieCrunch_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3AD7401B0A6EDA00F8650E /* CookieCrunch_MacTests.swift */; };
 		FEA549A41AF3CBE100137A4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA549A31AF3CBE100137A4B /* Images.xcassets */; };
 		FEA549A61AF3D09500137A4B /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA549A51AF3D09500137A4B /* Array2D.swift */; };
 		FEA549A81AF3D44800137A4B /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA549A71AF3D44800137A4B /* Level.swift */; };
@@ -37,6 +43,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FE3AD73B1B0A6EDA00F8650E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF381AF1AF2CB7C00782BB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE3AD7261B0A6ED900F8650E;
+			remoteInfo = "CookieCrunch Mac";
+		};
 		FEF381D11AF2CB7C00782BB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FEF381AF1AF2CB7C00782BB2 /* Project object */;
@@ -50,6 +63,16 @@
 		FE0280A41AF7D0C5003EB9F3 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		FE0280A61AF7D1EC003EB9F3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FE0280A81AF803F2003EB9F3 /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
+		FE3AD7271B0A6ED900F8650E /* CookieCrunch Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CookieCrunch Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3AD72A1B0A6ED900F8650E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3AD72B1B0A6ED900F8650E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE3AD72D1B0A6ED900F8650E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FE3AD72F1B0A6ED900F8650E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FE3AD7311B0A6EDA00F8650E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FE3AD7341B0A6EDA00F8650E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FE3AD73A1B0A6EDA00F8650E /* CookieCrunch MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CookieCrunch MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3AD73F1B0A6EDA00F8650E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3AD7401B0A6EDA00F8650E /* CookieCrunch_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCrunch_MacTests.swift; sourceTree = "<group>"; };
 		FEA549A31AF3CBE100137A4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FEA549A51AF3D09500137A4B /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		FEA549A71AF3D44800137A4B /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
@@ -82,6 +105,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FE3AD7241B0A6ED900F8650E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3AD7371B0A6EDA00F8650E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEF381B41AF2CB7C00782BB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,44 +136,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FE0280AA1AF80401003EB9F3 /* Models */ = {
+		FE3AD7281B0A6ED900F8650E /* CookieCrunch Mac */ = {
 			isa = PBXGroup;
 			children = (
-				FEA549A51AF3D09500137A4B /* Array2D.swift */,
-				FEF382081AF2D12800782BB2 /* Cookie.swift */,
-				FEA549A71AF3D44800137A4B /* Level.swift */,
-				FE0280A41AF7D0C5003EB9F3 /* Tile.swift */,
-				FE0280A81AF803F2003EB9F3 /* Swap.swift */,
-				FEEEC6C91AFA5F7A00372229 /* Chain.swift */,
+				FE3AD72B1B0A6ED900F8650E /* AppDelegate.swift */,
+				FE3AD72D1B0A6ED900F8650E /* GameScene.swift */,
+				FE3AD72F1B0A6ED900F8650E /* GameScene.sks */,
+				FE3AD7311B0A6EDA00F8650E /* Images.xcassets */,
+				FE3AD7331B0A6EDA00F8650E /* MainMenu.xib */,
+				FE3AD7291B0A6ED900F8650E /* Supporting Files */,
 			);
-			name = Models;
+			path = "CookieCrunch Mac";
 			sourceTree = "<group>";
 		};
-		FE0280AB1AF80409003EB9F3 /* Controllers */ = {
+		FE3AD7291B0A6ED900F8650E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FEF381C21AF2CB7C00782BB2 /* GameViewController.swift */,
+				FE3AD72A1B0A6ED900F8650E /* Info.plist */,
 			);
-			name = Controllers;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FE0280AC1AF8041B003EB9F3 /* Views */ = {
+		FE3AD73D1B0A6EDA00F8650E /* CookieCrunch MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE3AD7401B0A6EDA00F8650E /* CookieCrunch_MacTests.swift */,
+				FE3AD73E1B0A6EDA00F8650E /* Supporting Files */,
+			);
+			path = "CookieCrunch MacTests";
+			sourceTree = "<group>";
+		};
+		FE3AD73E1B0A6EDA00F8650E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE3AD73F1B0A6EDA00F8650E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE3AD7481B0A71A100F8650E /* CookieCrunch Shared */ = {
 			isa = PBXGroup;
 			children = (
 				FEF381C01AF2CB7C00782BB2 /* GameScene.swift */,
 				FE0280A61AF7D1EC003EB9F3 /* Extensions.swift */,
-				FEF381C41AF2CB7C00782BB2 /* Main.storyboard */,
-				FEF381C91AF2CB7C00782BB2 /* LaunchScreen.xib */,
+				FEA549A51AF3D09500137A4B /* Array2D.swift */,
+				FEF382081AF2D12800782BB2 /* Cookie.swift */,
+				FEEEC6C91AFA5F7A00372229 /* Chain.swift */,
+				FEA549A71AF3D44800137A4B /* Level.swift */,
+				FE0280A41AF7D0C5003EB9F3 /* Tile.swift */,
+				FE0280A81AF803F2003EB9F3 /* Swap.swift */,
+				FEA549A31AF3CBE100137A4B /* Images.xcassets */,
+				FEF381E01AF2CC7600782BB2 /* Resources */,
 			);
-			name = Views;
+			name = "CookieCrunch Shared";
+			path = CookieCrunch;
 			sourceTree = "<group>";
 		};
 		FEF381AE1AF2CB7C00782BB2 = {
 			isa = PBXGroup;
 			children = (
 				FEF3820A1AF2D36F00782BB2 /* README.md */,
+				FE3AD7481B0A71A100F8650E /* CookieCrunch Shared */,
 				FEF381B91AF2CB7C00782BB2 /* CookieCrunch */,
 				FEF381D31AF2CB7C00782BB2 /* CookieCrunchTests */,
+				FE3AD7281B0A6ED900F8650E /* CookieCrunch Mac */,
+				FE3AD73D1B0A6EDA00F8650E /* CookieCrunch MacTests */,
 				FEF381B81AF2CB7C00782BB2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +210,8 @@
 			children = (
 				FEF381B71AF2CB7C00782BB2 /* CookieCrunch.app */,
 				FEF381D01AF2CB7C00782BB2 /* CookieCrunchTests.xctest */,
+				FE3AD7271B0A6ED900F8650E /* CookieCrunch Mac.app */,
+				FE3AD73A1B0A6EDA00F8650E /* CookieCrunch MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,11 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				FEF381BC1AF2CB7C00782BB2 /* AppDelegate.swift */,
-				FE0280AC1AF8041B003EB9F3 /* Views */,
-				FE0280AB1AF80409003EB9F3 /* Controllers */,
-				FE0280AA1AF80401003EB9F3 /* Models */,
-				FEA549A31AF3CBE100137A4B /* Images.xcassets */,
-				FEF381E01AF2CC7600782BB2 /* Resources */,
+				FEF381C21AF2CB7C00782BB2 /* GameViewController.swift */,
+				FEF381C41AF2CB7C00782BB2 /* Main.storyboard */,
+				FEF381C91AF2CB7C00782BB2 /* LaunchScreen.xib */,
 				FEF381BA1AF2CB7C00782BB2 /* Supporting Files */,
 			);
 			path = CookieCrunch;
@@ -192,9 +256,9 @@
 		FEF381E01AF2CC7600782BB2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FEF381ED1AF2CC7600782BB2 /* Sounds */,
 				FEF381E11AF2CC7600782BB2 /* Grid.atlas */,
 				FEF381E71AF2CC7600782BB2 /* Levels */,
-				FEF381ED1AF2CC7600782BB2 /* Sounds */,
 				FEF381F41AF2CC7600782BB2 /* Sprites.atlas */,
 			);
 			path = Resources;
@@ -228,6 +292,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FE3AD7261B0A6ED900F8650E /* CookieCrunch Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE3AD7461B0A6EDA00F8650E /* Build configuration list for PBXNativeTarget "CookieCrunch Mac" */;
+			buildPhases = (
+				FE3AD7231B0A6ED900F8650E /* Sources */,
+				FE3AD7241B0A6ED900F8650E /* Frameworks */,
+				FE3AD7251B0A6ED900F8650E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CookieCrunch Mac";
+			productName = "CookieCrunch Mac";
+			productReference = FE3AD7271B0A6ED900F8650E /* CookieCrunch Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE3AD7391B0A6EDA00F8650E /* CookieCrunch MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE3AD7471B0A6EDA00F8650E /* Build configuration list for PBXNativeTarget "CookieCrunch MacTests" */;
+			buildPhases = (
+				FE3AD7361B0A6EDA00F8650E /* Sources */,
+				FE3AD7371B0A6EDA00F8650E /* Frameworks */,
+				FE3AD7381B0A6EDA00F8650E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE3AD73C1B0A6EDA00F8650E /* PBXTargetDependency */,
+			);
+			name = "CookieCrunch MacTests";
+			productName = "CookieCrunch MacTests";
+			productReference = FE3AD73A1B0A6EDA00F8650E /* CookieCrunch MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FEF381B61AF2CB7C00782BB2 /* CookieCrunch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEF381DA1AF2CB7C00782BB2 /* Build configuration list for PBXNativeTarget "CookieCrunch" */;
@@ -272,6 +371,13 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Daniel Flax";
 				TargetAttributes = {
+					FE3AD7261B0A6ED900F8650E = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					FE3AD7391B0A6EDA00F8650E = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = FE3AD7261B0A6ED900F8650E;
+					};
 					FEF381B61AF2CB7C00782BB2 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
@@ -296,11 +402,30 @@
 			targets = (
 				FEF381B61AF2CB7C00782BB2 /* CookieCrunch */,
 				FEF381CF1AF2CB7C00782BB2 /* CookieCrunchTests */,
+				FE3AD7261B0A6ED900F8650E /* CookieCrunch Mac */,
+				FE3AD7391B0A6EDA00F8650E /* CookieCrunch MacTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FE3AD7251B0A6ED900F8650E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3AD7301B0A6ED900F8650E /* GameScene.sks in Resources */,
+				FE3AD7321B0A6EDA00F8650E /* Images.xcassets in Resources */,
+				FE3AD7351B0A6EDA00F8650E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3AD7381B0A6EDA00F8650E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEF381B51AF2CB7C00782BB2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,6 +459,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FE3AD7231B0A6ED900F8650E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3AD72E1B0A6ED900F8650E /* GameScene.swift in Sources */,
+				FE3AD72C1B0A6ED900F8650E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3AD7361B0A6EDA00F8650E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3AD7411B0A6EDA00F8650E /* CookieCrunch_MacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEF381B31AF2CB7C00782BB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,6 +504,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FE3AD73C1B0A6EDA00F8650E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE3AD7261B0A6ED900F8650E /* CookieCrunch Mac */;
+			targetProxy = FE3AD73B1B0A6EDA00F8650E /* PBXContainerItemProxy */;
+		};
 		FEF381D21AF2CB7C00782BB2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FEF381B61AF2CB7C00782BB2 /* CookieCrunch */;
@@ -370,6 +517,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FE3AD7331B0A6EDA00F8650E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE3AD7341B0A6EDA00F8650E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		FEF381C41AF2CB7C00782BB2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -389,6 +544,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FE3AD7421B0A6EDA00F8650E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CookieCrunch Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FE3AD7431B0A6EDA00F8650E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CookieCrunch Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FE3AD7441B0A6EDA00F8650E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CookieCrunch MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieCrunch Mac.app/Contents/MacOS/CookieCrunch Mac";
+			};
+			name = Debug;
+		};
+		FE3AD7451B0A6EDA00F8650E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CookieCrunch MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieCrunch Mac.app/Contents/MacOS/CookieCrunch Mac";
+			};
+			name = Release;
+		};
 		FEF381D81AF2CB7C00782BB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -529,6 +758,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FE3AD7461B0A6EDA00F8650E /* Build configuration list for PBXNativeTarget "CookieCrunch Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3AD7421B0A6EDA00F8650E /* Debug */,
+				FE3AD7431B0A6EDA00F8650E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE3AD7471B0A6EDA00F8650E /* Build configuration list for PBXNativeTarget "CookieCrunch MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3AD7441B0A6EDA00F8650E /* Debug */,
+				FE3AD7451B0A6EDA00F8650E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FEF381B21AF2CB7C00782BB2 /* Build configuration list for PBXProject "CookieCrunch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
